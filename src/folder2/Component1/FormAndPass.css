@@ -1,0 +1,65 @@
+.form-and-pass {
+  background: #fff;
+  min-height: 100vh;
+}
+#form_img {
+  background: url(./form_img.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 100px;
+  height: 100vh;
+}
+.form-and-pass button,
+a {
+  width: 33.33% !important;
+}
+h2 {
+  position: relative;
+  width: 100%;
+  height: 67px;
+  overflow: hidden;
+}
+h2 .error {
+  animation: efex 1.5s forwards cubic-bezier(0.215, 0.61, 0.355, 1);
+  font-size: 0;
+}
+@keyframes efex {
+  50% {
+    font-size: 3.5rem;
+  }
+  80% {
+    font-size: 2.5rem;
+  }
+  100% {
+    font-size: 40px;
+  }
+}
+h2 .no-error {
+  opacity: 0;
+  transition: 1s;
+  top: -100%;
+  position: absolute;
+  animation: no-errp 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 40px !important;
+}
+@keyframes no-errp {
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+.loading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.form-and-pass h1 {
+  font-weight: 400;
+}

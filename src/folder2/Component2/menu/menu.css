@@ -1,0 +1,104 @@
+.animation-fud,
+.opshi-menu {
+	transform: scale(0);
+	opacity: 0;
+	transition: all 0.4s;
+	animation: animm 1.5s forwards cubic-bezier(0.19, 1, 0.22, 1) !important;
+}
+@keyframes animm {
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.buyutrman-focus {
+	transition: 0.4s;
+	cursor: pointer;
+}
+.buyutrman-focus:hover {
+	color: yellow;
+}
+.list-of-order {
+	width: 100%;
+	height: auto;
+	margin: 0.3rem 0;
+	background: #555;
+}
+
+.menu_css {
+	width: 60% !important;
+	margin: 100px 150px !important;
+	display: grid !important;
+	grid-template-columns: 1fr 1fr !important;
+	grid-template-rows: 1fr 1fr !important;
+	grid-column-gap: 20px !important;
+	grid-row-gap: 20px !important;
+}
+.mm1 {
+	height: 80px !important;
+	font-size: 1.7rem !important;
+}
+.alert-one {
+	/* width: 63.7%; */
+	width: 180px !important;
+	opacity: 0;
+	height: 50px;
+	top: 310px;
+	right: 8%;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background: #dc3545;
+	font-weight: 800;
+	padding: 10px 15px;
+	position: absolute;
+	z-index: 2222;
+	text-align: center;
+	margin: 0;
+	animation: ass 1s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+.alert-one:hover {
+	font-size: 0;
+}
+.alert-one:hover span {
+	opacity: 1;
+}
+.alert-one span {
+	position: absolute;
+	font-size: 2rem;
+	height: 50px !important;
+	width: 100%;
+	top: 0px;
+	right: 0;
+	cursor: pointer;
+	display: inline-block;
+	transition: 0.3s;
+	opacity: 0;
+	margin: 0;
+}
+.alert-one span:hover {
+	color: #fff;
+	animation: hoverCo 0.2s infinite;
+}
+@keyframes hoverCo {
+	100% {
+		color: red;
+	}
+}
+@keyframes ass {
+	100% {
+		opacity: 1;
+		width: 63.7%;
+	}
+}
+.alert-one p {
+	animation: colorAnim 1s infinite;
+}
+@keyframes colorAnim {
+	100% {
+		color: yellow;
+	}
+}
+.bt {
+	padding: 5px !important;
+	overflow: hidden;
+}

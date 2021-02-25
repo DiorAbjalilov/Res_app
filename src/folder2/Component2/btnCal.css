@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.btnCalBlock {
+	width: 60%;
+	padding: 5px 10px;
+	/* border: 1px solid green; */
+}
+.btnCalBlock .btn-group {
+	display: flex;
+	border-radius: 0 !important;
+	column-gap: 20px;
+}

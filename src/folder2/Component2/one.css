@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	/* font-family: sans-serif; */
+	box-sizing: border-box;
+}
+.BIGcontaneir {
+	width: 85%;
+	height: auto;
+	margin: 5px auto;
+	/* border: 1px solid black; */
+	background-color: rgba(255, 242, 0, 0.9);
+	border-radius: 5px;
+}
+.BIGcontaneir .topBlock {
+	/* border: 1px solid black; */
+	width: 100%;
+	padding: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	display: flex;
+	box-shadow: 0 1px 0.2em rgba(0, 0, 0, 0.4);
+	background-color: red;
+	color: #fff;
+	align-items: center;
+	justify-content: space-between;
+}
+.BIGcontaneir .topBlock .Block:nth-child(3) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.BIGcontaneir .topBlock .Block:nth-child(2) h3 {
+	font-family: "Lobster", cursive;
+	font-size: 2.5em;
+}
+.BIGcontaneir .topBlock .Block:nth-child(3) h3 {
+	font-size: 22px;
+	padding-right: 10px;
+}
+.BIGcontaneir .topBlock .Block:nth-child(3) span {
+	font-size: 25px;
+}
+.BIGcontaneir .centerBlock {
+	display: flex;
+	/* border: 1px solid black; */
+}
+.BIGcontaneir .LeftBlock {
+	width: 25%;
+	/* border: 1px solid black; */
+	box-shadow: 1px 0 0.2em rgba(0, 0, 0, 0.4);
+	padding: 10px 5px 5px;
+}
+.BIGcontaneir .LeftBlock .btnGroup {
+	display: flex;
+	/* border: 1px solid red; */
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+}
+.BIGcontaneir .LeftBlock .btnGroup .btn {
+	width: 220px !important;
+	padding: 10px !important;
+	font-size: 19px !important;
+}
+
+.BIGcontaneir .LeftBlock .photoBottom {
+	width: 100%;
+	height: 240px;
+	text-align: center;
+	background-image: url("./chef.png");
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.centerBlock .ifrem {
+	width: 75%;
+}
+.centerBlock .ifrem .iconUn {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 50%;
+	height: 400px;
+	background-size: 70%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("./iconFood1.svg");
+}
+
+.data {
+	width: 150px;
+	display: block;
+}
+.home-page {
+	display: grid;
+	grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+	grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr;
+	grid-row-gap: 50px;
+	grid-column-gap: 50px;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+}
+.home-page .stol {
+	background-size: cover;
+	display: flex;
+	border: 3px solid #fff;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 5px;
+	z-index: 1;
+	cursor: pointer;
+}
+.home-page .stol h3 {
+	font-weight: 500;
+	font-size: 2.6rem;
+}
+.home-page .stol h4 {
+	font-weight: 500;
+	font-size: 1rem;
+}
+.home-page .stol:nth-child(3),
+.home-page .stol:nth-child(5),
+.home-page .stol:nth-child(10),
+.home-page .stol:nth-child(12),
+.home-page .stol:nth-child(16),
+.home-page .stol:nth-child(19) {
+	animation: aan 1s linear infinite;
+	transition: 1s;
+}
+@keyframes aan {
+	100% {
+		background-color: red;
+		color: #fff;
+	}
+}
+
+/* New Order */
+/* New Order */
+/* New Order */
+
+/* New Order */
+/* New Order */
+/* New Order */
+.new-order {
+	position: relative;
+	width: 88%;
+	height: 85%;
+	left: 50%;
+	top: 50%;
+	display: flex;
+	flex-direction: column;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, .9);
+	box-shadow: 0 0 8px 0px rgba(0, 0, 0, .3);
+}
+.page-30 {
+	width: 100%;
+	height: 30%;
+	border-radius: 4px;
+	/* border: 1px solid black; */
+	overflow: hidden;
+}
+.pag-30-tab {
+	width: 100%;
+	height: auto;
+	list-style: none;
+	overflow-y: auto;
+	background: black;
+}
+.pag-30-tab-item {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px dashed rgb(180, 171, 171);
+	width: 100%;
+	height: auto;
+	line-height: 20px;
+	font-size: 0.6rem;
+	color: rgb(228, 215, 215);
+	padding: 0 10px;
+	cursor: default;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.page-70 {
+	border-top: 1px solid black;
+	display: flex;
+	height: 70%;
+	align-items: center;
+	justify-content: center;
+}
+.fud-btn-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	outline: none;
+}
+.fud-input {
+	border: 2px solid #666;
+	padding: 4px 3px;
+	border-radius: 5px;
+	outline: none;
+	background: none;
+	font-weight: 500;
+	color: rgb(66, 4, 4);
+}
+.page-70 .btn {
+	margin: 10px auto !important;
+	width: 70% !important;
+}
+.intBarBlock {
+	display: flex;
+	/* border: 1px solid blueviolet; */
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px 2px;
+}
+.intBarBlock .Stol {
+	width: 10%;
+	margin: 0 5px;
+	padding: 4px 3px;
+}
+.btnBarBlock {
+	display: grid;
+	grid-template-rows: .2fr 1fr;
+	grid-row-gap: 0px;
+	height: 100%;
+	/* border: 1px solid black; */
+}
+.btnBarBlock .bt {
+	/* border: 2px solid gold; */
+	display: flex;
+	/* height: 300px; */
+	padding-left: 5px;
+}
+
+.bt .opshi-menu {
+	display: grid !important;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 0px !important;
+	grid-column-gap: 15px !important;
+	padding: 5px;
+}
+.bt .opshi-menu .btn {
+	width: 100% !important;
+	height: 100px;
+	border-radius: 0;
+	font-size: 30px;
+	margin: 0 !important;
+	padding: 0 !important;
+}
